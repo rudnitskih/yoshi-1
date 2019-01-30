@@ -223,10 +223,11 @@ const getStyleLoaders = ({
             ]
           : [
               {
-                loader: 'css-loader/locals',
+                loader: 'css-loader',
                 options: {
                   ...cssLoaderOptions,
                   importLoaders: 2 + Number(tpaStyle),
+                  exportOnlyLocals: true,
                   sourceMap: false,
                 },
               },
