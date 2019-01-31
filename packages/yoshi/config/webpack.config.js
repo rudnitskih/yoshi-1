@@ -212,7 +212,7 @@ const getStyleLoaders = ({
                   ident: 'postcss',
                   plugins: [
                     require('autoprefixer')({
-                      browsers: 'ie >= 11',
+                      browsers: 'last 8 years',
                     }),
                   ],
                   sourceMap: isDebug,
