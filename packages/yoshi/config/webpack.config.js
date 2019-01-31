@@ -210,7 +210,11 @@ const getStyleLoaders = ({
                 options: {
                   // https://github.com/facebookincubator/create-react-app/issues/2677
                   ident: 'postcss',
-                  plugins: [require('autoprefixer')],
+                  plugins: [
+                    require('autoprefixer')({
+                      browsers: 'ie >= 11',
+                    }),
+                  ],
                   sourceMap: isDebug,
                 },
               },
