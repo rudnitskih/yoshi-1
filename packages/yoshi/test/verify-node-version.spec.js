@@ -16,6 +16,6 @@ describe('mocked outdated node version', function() {
   });
 
   it('should exit early if ran with outdated node version', function() {
-    expect(verifyNodeVersion).to.throw('Must use node.js version >=10.0');
+    expect(verifyNodeVersion).to.throw('Must use node.js version >=8.0');
   });
 });
