@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 const importLocal = require('import-local');
-const verifyNodeVersion = require('../src/verify-node-version');
+const { verifyMinimumNodeVersion } = require('yoshi-helpers');
 
-verifyNodeVersion();
+verifyMinimumNodeVersion(`8.7.0`);
 
 if (!importLocal(__filename)) {
   require('./yoshi-cli');

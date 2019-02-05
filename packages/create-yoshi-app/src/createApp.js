@@ -10,7 +10,7 @@ const verifyWorkingDirectory = require('./verifyWorkingDirectory');
 const runPrompt = require('./runPrompt');
 const generateProject = require('./generateProject');
 const verifyRegistry = require('./verifyRegistry');
-const verifyMinimumNodeVersion = require('./verifyMinimumNodeVersion');
+const { verifyMinimumNodeVersion } = require('yoshi-helpers');
 
 module.exports = async (workingDir, projectDirName) => {
   verifyWorkingDirectory(workingDir);
